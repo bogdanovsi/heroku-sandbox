@@ -44,8 +44,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'MongoDb',
             filename: path.resolve(__dirname, 'build', 'index.html'),
-            template: path.join('client', 'public', 'index.html'),
-            favicon: path.join('client', 'public', 'favicon.ico')
+            template: path.join('public', 'index.html'),
+            favicon: path.join('public', 'favicon.ico')
         }),
     ],
     resolve: {
