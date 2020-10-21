@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+
+import Zip from './pages/Zip';
 import Books from './pages/Books';
 import Contracts from './pages/Contracts';
 import Customers from './pages/Customers';
@@ -11,6 +13,7 @@ const RouterList = () => {
     return (
         <Switch>
             <Route exact path='/' component={Books}/>
+            <Route path='/zip' component={Zip}/>
             <Route path='/books' component={Books}/>
             <Route path='/contracts' component={Contracts}/>
             <Route path='/customers' component={Customers}/>

@@ -13,17 +13,7 @@ export default class App extends Component {
       return (
          <>
             <div className="container main" style={styles.main} >
-               <div>
-                  <h1>Издательский центр "bsi"</h1>
-               </div>
-               <div className="work-area" >
-                  <div style={{ marginBottom: 15 }}>
-                     <Menu/>
-                  </div>
-                  <div>
-                     <RouterList />
-                  </div>
-               </div>
+               <RouterList />
             </div>
          </>
       );
