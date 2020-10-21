@@ -8,7 +8,7 @@ require('./src/mongo');
 
 app.use(express.json());
 app.listen(process.env.PORT || 5000);
-const staicFiles = express.static(path.join(__dirname, '../client/build'));
+const staicFiles = express.static(path.join(__dirname, '../build'));
 app.use(staicFiles);
 
 // routers
@@ -16,5 +16,5 @@ app.use(require('./src/routers'))
 
 // another routers
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
